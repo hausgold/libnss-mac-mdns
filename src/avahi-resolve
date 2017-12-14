@@ -1,0 +1,19 @@
+#!/bin/sh
+# A fake avahi-resolve binary for use in testing
+
+case "$@" in
+    # successful mDNS lookup
+    "-n pdf-api.local")
+        echo "pdf-api.local	172.17.0.17"
+        exit 0
+        ;;
+    # failed mDNS lookup
+    "-n unknown.local")
+        >&2 echo "Failed to resolve host name 'unknown.local': Timeout reached"
+        exit 0
+        ;;
+    # failed mDNS lookup, with error code
+    "-n exitcode.local")
+        exit 1
+        ;;
+esac

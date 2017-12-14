@@ -1,0 +1,5 @@
+.*.sw?
+*.o
+*.so
+*.so.2
+nss-test
