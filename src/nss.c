@@ -76,10 +76,6 @@ lookup_mdns_ip(
     stdout_s = g_strstrip(parts[1]);
     success = inet_aton(stdout_s, addr);
 
-    // printf("bernd: %s\n", parts[0]);
-    // printf("bernd: %s\n", parts[1]);
-    // g_strfreev(parts);
-
 finally:
 
     // EPA loves us
