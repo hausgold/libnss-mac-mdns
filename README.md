@@ -38,7 +38,7 @@ First you need to clone this repository from Github:
 
 ```bash
 # Clone the repository
-$ git clone git@github.com:hausgold/libnss-mac-mdns.git
+$ git clone https://github.com/hausgold/libnss-mac-mdns.git
 # Go in the repository directory
 $ cd libnss-mac-mdns
 ```
