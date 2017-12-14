@@ -8,8 +8,8 @@ LDCONFIG ?= ldconfig
 INSTALL ?= install
 MKDIR ?= mkdir
 
-CFLAGS = -fPIC -Wall -Werror -ggdb `pkg-config --cflags glib-2.0`
-LDFLAGS = `pkg-config --libs glib-2.0`
+CFLAGS = -Wl,--no-as-needed -fPIC -Wall -Werror -ggdb `pkg-config --cflags glib-2.0`
+LDFLAGS = -Wl,--no-as-needed `pkg-config --libs glib-2.0`
 
 MODULE = libnss_mac_mdns.so.2
 BINS = \

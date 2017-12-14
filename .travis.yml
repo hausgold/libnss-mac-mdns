@@ -2,12 +2,12 @@ language: c
 
 install:
   - sudo apt-get install valgrind libglib2.0-dev
-
-script:
   - pkg-config --cflags glib-2.0
   - pkg-config --libs glib-2.0
+
+script:
   - make
   - sudo make install
   - >-
-    sudo sed -i -re 's/^(hosts: .*$)/mac_mdns \1/' /etc/nsswitch.conf
+    sudo sed -i -re 's/^hosts:(.*$)/hosts: mac_mdns \1/' /etc/nsswitch.conf
   - make test
