@@ -1,7 +1,7 @@
 language: c
 
 install:
-  - sudo apt-get install valgrind
+  - sudo apt-get install valgrind libglib2.0-dev
 
 script:
   - make

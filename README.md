@@ -1,6 +1,6 @@
 ![libnss-mac-mdns](doc/assets/project.png)
 
-[![Build Status](https://travis-ci.org/hausgold/libnss-mac-mdns.svg&branch=master)](https://travis-ci.com/hausgold/libnss-mac-mdns)
+[![Build Status](https://travis-ci.org/hausgold/libnss-mac-mdns.svg?branch=master)](https://travis-ci.org/hausgold/libnss-mac-mdns)
 
 This project is dedicated to enable containers on a Docker subnetwork to lookup
 macOS compatible mDNS domain names by the low level Name Service Switch (NSS).
@@ -13,17 +13,13 @@ responds to the `.mac` suffix domain. Thats where this plugin jumps into. We
 allow domain resolution with the `.mac` suffix in place by using the Avahi
 client, just like a jump host.
 
-- [Usecase](#usecase)
 - [Requirements](#requirements)
+- [Usecase](#usecase)
 - [Getting started](#getting-started)
 - [Usage](#usage)
 - [Testing](#testing)
 - [Contributing](#contributing)
 - [Credits](#credits)
-
-## Usecase
-
-![libnss-mac-mdns](doc/assets/usecase.png)
 
 ## Requirements
 
@@ -31,6 +27,10 @@ client, just like a jump host.
 * [GCC](http://gcc.gnu.org/) (>=7.2.1)
 * [glibc](http://www.gnu.org/software/libc) (>=2.26)
 * [glib2](https://wiki.gnome.org/Projects/GLib) (>=2.54.2)
+
+## Usecase
+
+![libnss-mac-mdns](doc/assets/usecase.png)
 
 ## Getting started
 
