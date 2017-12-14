@@ -4,7 +4,9 @@ install:
   - sudo apt-get install valgrind libglib2.0-dev
 
 script:
+  - pkg-config --cflags glib-2.0
   - make
   - sudo make install
-  - sudo sed -i -re 's/^(hosts: .*$)/\1 mac_mdns/' /etc/nsswitch.conf
+  - >-
+    sudo sed -i -re 's/^(hosts: .*$)/mac_mdns \1/' /etc/nsswitch.conf
   - make test
