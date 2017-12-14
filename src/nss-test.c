@@ -89,8 +89,8 @@ test_gethostbyname2_inet6(void)
     results = gethostbyname2("pdf-api.local.mac", AF_INET6);
 
     g_assert(results == NULL);
-    g_assert_cmpint(errno, ==, EAFNOSUPPORT);
     g_assert_cmpint(h_errno, ==, NO_DATA);
+    g_assert_cmpint(errno, ==, EAFNOSUPPORT);
 }
 
 int
