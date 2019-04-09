@@ -1,6 +1,6 @@
 ![libnss-mac-mdns](doc/assets/project.svg)
 
-[![Build Status](https://travis-ci.org/hausgold/libnss-mac-mdns.svg?branch=master)](https://travis-ci.org/hausgold/libnss-mac-mdns)
+[![Build Status](https://travis-ci.com/hausgold/libnss-mac-mdns.svg?branch=master)](https://travis-ci.com/hausgold/libnss-mac-mdns)
 [![Maintainability](https://api.codeclimate.com/v1/badges/afea5af153fd7a23bb31/maintainability)](https://codeclimate.com/repos/5cac8d906969c3778e00948f/maintainability)
 [![Test Coverage](https://api.codeclimate.com/v1/badges/afea5af153fd7a23bb31/test_coverage)](https://codeclimate.com/repos/5cac8d906969c3778e00948f/test_coverage)
 
