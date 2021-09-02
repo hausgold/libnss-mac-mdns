@@ -1,0 +1,35 @@
+name: Test
+on:
+  push:
+    branches:
+      - '**'
+  schedule:
+    - cron: '0 0 * * MON'
+
+concurrency:
+  group: '${{ github.ref }}'
+  cancel-in-progress: true
+
+jobs:
+  test:
+    name: Test the library
+    runs-on: ubuntu-20.04
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v2
+
+      - name: Build the library
+        run: make build
+
+      - name: Install the library
+        run: sudo make install
+
+      - name: Install dependencies for testing
+        run: sudo apt-get update -y && sudo apt-get install -y valgrind
+
+      - name: Configure the host for testing
+        run: >
+          sudo sed -i -re 's/^hosts:(.*$)/hosts: mac_mdns/' /etc/nsswitch.conf
+
+      - name: Run the library tests
+        run: make test
