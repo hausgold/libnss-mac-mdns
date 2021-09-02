@@ -1,0 +1,2 @@
+tag-template: v$NEXT_MINOR_VERSION
+template: $CHANGES

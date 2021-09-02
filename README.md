@@ -1,8 +1,6 @@
 ![libnss-mac-mdns](doc/assets/project.svg)
 
-[![Build Status](https://travis-ci.com/hausgold/libnss-mac-mdns.svg?branch=master)](https://travis-ci.com/hausgold/libnss-mac-mdns)
-[![Maintainability](https://api.codeclimate.com/v1/badges/afea5af153fd7a23bb31/maintainability)](https://codeclimate.com/repos/5cac8d906969c3778e00948f/maintainability)
-[![Test Coverage](https://api.codeclimate.com/v1/badges/afea5af153fd7a23bb31/test_coverage)](https://codeclimate.com/repos/5cac8d906969c3778e00948f/test_coverage)
+[![Test](https://github.com/hausgold/libnss-mac-mdns/actions/workflows/test.yml/badge.svg)](https://github.com/hausgold/libnss-mac-mdns/actions/workflows/test.yml)
 
 This project is dedicated to enable containers on a Docker subnetwork to lookup
 macOS compatible mDNS domain names by the low level Name Service Switch (NSS).
